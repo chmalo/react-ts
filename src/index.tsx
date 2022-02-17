@@ -14,6 +14,7 @@ import EssayForm from './documentation/forms/EssayForm';
 import Calculator from './documentation/Calculator';
 import WelcomeDialog from "./documentation/WelcomeDialog";
 import AppComposition from "./documentation/AppComposition";
+import Example from "./hooks/Example";
 
 ReactDOM.render(
   <React.StrictMode>
@@ -23,26 +24,26 @@ ReactDOM.render(
 );
 
 ReactDOM.render(
-    <Toggle />,
+    <Example />,
     document.getElementById('root2')
 );
 
-ReactDOM.render(
-    <LoginControl />,
-    document.getElementById('root3')
-);
+// ReactDOM.render(
+//     <LoginControl />,
+//     document.getElementById('root3')
+// );
 
 
-const messages: string[] = ['React', 'Re: React', 'Re:Re: React'];
-ReactDOM.render(
-    <Mailbox unreadMessages={messages}/>,
-    document.getElementById('root4')
-);
-
-ReactDOM.render(
-    <WelcomeDialog />,
-    document.getElementById('root5')
-);
+// const messages: string[] = ['React', 'Re: React', 'Re:Re: React'];
+// ReactDOM.render(
+//     <Mailbox unreadMessages={messages}/>,
+//     document.getElementById('root4')
+// );
+//
+// ReactDOM.render(
+//     <WelcomeDialog />,
+//     document.getElementById('root5')
+// );
 
 // const numbers: number[] = [1, 2, 3, 4, 5];
 // ReactDOM.render(
@@ -61,15 +62,15 @@ ReactDOM.render(
 //     document.getElementById('root7')
 // );
 
-ReactDOM.render(
-    <NameForm />,
-    document.getElementById('root6')
-);
-
-ReactDOM.render(
-    <Calculator />,
-    document.getElementById('root7')
-);
+// ReactDOM.render(
+//     <NameForm />,
+//     document.getElementById('root6')
+// );
+//
+// ReactDOM.render(
+//     <Calculator />,
+//     document.getElementById('root7')
+// );
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
