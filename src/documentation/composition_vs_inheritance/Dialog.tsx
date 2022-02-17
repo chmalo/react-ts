@@ -13,4 +13,3 @@ export default function Dialog({title, message}:{title: string, message: string}
         </FancyBorder>
     );
 }
-
