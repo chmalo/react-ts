@@ -1,12 +1,13 @@
-import React from 'react';
-import './App.css';
-// import Welcome from './documentation/Welcome';
 import Clock from './documentation/Clock';
+import {Counter} from "./hooks/Counter";
 
 function App() {
   return (
       <div>
         <Clock />
+        <hr/>
+        <Counter />
+        <hr/>
       </div>
   )
 }
