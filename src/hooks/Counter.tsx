@@ -7,7 +7,7 @@ export function Counter() {
         setCounter(counter + number);
     }
     return (
-        <div className="mt-5">
+        <div className="mt-3">
             <h3>Counter: useState</h3>
             <p>You clicked {counter} times</p>
             <div className="row">

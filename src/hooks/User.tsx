@@ -17,7 +17,7 @@ export function User() {
     };
 
     return (
-        <div className="mt-5">
+        <div className="mt-3">
             <h3>Usuario: useState</h3>
 
             <button
