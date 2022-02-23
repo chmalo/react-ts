@@ -12,19 +12,22 @@ import EssayForm from './documentation/forms/EssayForm';
 import Calculator from './documentation/Calculator';
 import WelcomeDialog from "./documentation/WelcomeDialog";
 import AppComposition from "./documentation/AppComposition";
+import AppRoutes from "./AppRoutes";
 
 
 ReactDOM.render(
   <React.StrictMode>
     <App />
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById('root2')
 );
 
-// ReactDOM.render(
-//     <LoginControl />,
-//     document.getElementById('root3')
-// );
+ReactDOM.render(
+    <React.StrictMode>
+        <AppRoutes />
+    </React.StrictMode>,
+    document.getElementById('root')
+);
 
 
 // const messages: string[] = ['React', 'Re: React', 'Re:Re: React'];
