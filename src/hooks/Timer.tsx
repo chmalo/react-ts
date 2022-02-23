@@ -4,7 +4,7 @@ type TimerProps = {
     milisegundos: number
 }
 
-export function Timer({milisegundos}: TimerProps) {
+export default function Timer({milisegundos}: TimerProps) {
     const [segundos, setSegundos] = useState(0);
     const ref = useRef<NodeJS.Timer>();
 
