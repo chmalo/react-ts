@@ -23,6 +23,7 @@ const themes = {
 function App() {
   return (
       <div>
+        <hr/>
         <Clock />
         <hr/>
         <h2>UseState</h2>
@@ -35,6 +36,7 @@ function App() {
         <ThemeContext.Provider value={themes.dark}>
             <Toolbar />
         </ThemeContext.Provider>
+        <hr/>
       </div>
   )
 }
