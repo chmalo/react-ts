@@ -1,4 +1,3 @@
-import React from "react";
 import Clock from './documentation/Clock';
 
 import {Counter} from "./hooks/Counter";
@@ -8,6 +7,9 @@ import {TimerPadre} from "./hooks/TimerPadre";
 
 import {Toolbar} from "./hooks/Toolbar";
 import { ThemeContext } from "./hooks/ThemeContext";
+
+import { createRef } from 'react';
+import {FancyButton} from "./forwarding-refs/FancyButton";
 
 const themes = {
     light: {
@@ -19,6 +21,8 @@ const themes = {
         background: "#222222"
     }
 };
+
+const ref = createRef<HTMLButtonElement>();
 
 function App() {
   return (
@@ -37,6 +41,10 @@ function App() {
             <Toolbar />
         </ThemeContext.Provider>
         <hr/>
+        <h2>Reenvio de refs...</h2>
+        <FancyButton ref={ref}>
+            Click me!
+        </FancyButton>
       </div>
   )
 }
