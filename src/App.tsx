@@ -11,6 +11,8 @@ import { ThemeContext } from "./hooks/ThemeContext";
 import { createRef } from 'react';
 import {FancyButton} from "./forwarding-refs/FancyButton";
 
+import {ContadorRed} from "./hooks/ContadorRed";
+
 const themes = {
     light: {
         foreground: "#000000",
@@ -45,6 +47,9 @@ function App() {
         <FancyButton ref={ref}>
             Click me!
         </FancyButton>
+          <hr/>
+          <h2>UseReducer</h2>
+          <ContadorRed />
       </div>
   )
 }
