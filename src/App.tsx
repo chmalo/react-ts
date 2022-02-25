@@ -13,6 +13,8 @@ import {FancyButton} from "./forwarding-refs/FancyButton";
 
 import {ContadorRed} from "./hooks/ContadorRed";
 
+import {Table} from "./fragments/Table";
+
 const themes = {
     light: {
         foreground: "#000000",
@@ -47,9 +49,12 @@ function App() {
         <FancyButton ref={ref}>
             Click me!
         </FancyButton>
-          <hr/>
-          <h2>UseReducer</h2>
-          <ContadorRed />
+        <hr/>
+        <h2>UseReducer</h2>
+        <ContadorRed />
+        <hr/>
+        <h2>Fragments...</h2>
+        <Table />
       </div>
   )
 }
